@@ -2,7 +2,7 @@
  * @Author: nikolas.zengchunhui 
  * @Date: 2018-06-20 14:14:53 
  * @Last Modified by: nikolas.zengchunhui
- * @Last Modified time: 2018-06-20 15:41:02
+ * @Last Modified time: 2018-06-20 15:51:44
  */
 
 
@@ -15,7 +15,7 @@
  * @param {*} str
  * @returns
  */
-function palindrome(str) {
+function palindrome(str) {//注意： /\w/g.test('_') 为 true；
     // Good luck!
     let _str = str.replace(/[^\w\d]*_*/g, '').toLowerCase();
     return _str.split('').reverse().join('') == _str;
@@ -25,3 +25,4 @@ function palindrome(str) {
 
 let a = palindrome("0_0 (: /-\ :) 0-0");
 console.log(a);
+
